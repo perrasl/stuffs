@@ -1,4 +1,6 @@
-Reference dans le xml et valider avec le shemas 
+Reference dans le xml et valider avec le shemas
+
+ceci est ma participation active à ce travail  
 
 bibliotheque
 -  livre 
