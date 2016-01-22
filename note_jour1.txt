@@ -1,0 +1,23 @@
+J'ai retiré les lignes :  
+
+    # needed because this schema will be imported
+    attribute xml:base{text}?, 
+    
+qui était dans bibliotheque = element bibliotheque {...}
+
+puisque nous l'avions ajouté comme il était indiqué dans wine-catalog ..
+mais il semble importer autre chose que les format simple type... 
+Il semble importer le shemas de base text, 
+Donc pe que ça sera nécéssaire de le rajouter après ..si nous avons des probleme avec string
+
+
+Ensuite : 
+
+je pense qu'il faudrais definir un autre regle pour les personnage 
+nous n'avons indiquer que 
+
+    element personnage {auteur}
+    
+Cependant il y a une question que je me pose :
+je ne pense pas que les personage doivent avoir l'attribut ID 
+On pourrait demander au demo.

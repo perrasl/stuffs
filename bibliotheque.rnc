@@ -1,0 +1,37 @@
+default namespace = "http://www.iro.umontreal.ca/lily&lena/bibliotheque"
+datatypes xs = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+start = bibliotheque
+
+bibliotheque = element bibliotheque {
+                  livre*,
+                  auteur*
+               }
+               
+livre = element livre {
+    attribute xml:lang {xs:language},
+    attribute auteurs {xs:IDREFS},
+    element titre {xs:string},
+    element annee {xs:gYear},
+    prix,
+    element couverture {xs:anyURI}?,
+    element film {xs:anyURI}?,
+    element commentaire {xs:string}?,
+    element personnage {auteur}
+}
+
+prix = element prix {
+    element valeur {xs:decimal},
+    attribute monnaie {xs:string {pattern="[A-Z]{3}"}}?
+}
+
+auteur = element auteur {
+    attribute ident {xs:ID},
+    (element nom {xs:string} & element prenom {xs:string}),
+    element pays {xs:string}?,
+    element photo {xs:anyURI}?,
+    element commentaire {xs:string}?
+} 
+
+
+

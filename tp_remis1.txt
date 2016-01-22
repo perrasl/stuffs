@@ -1,6 +1,4 @@
-Reference dans le xml et valider avec le shemas
-
-ceci est ma participation active ‡ ce travail  
+Reference dans le xml et valider avec le shemas 
 
 bibliotheque
 -  livre 
@@ -29,5 +27,19 @@ option ordonn√©e (0 ou 1)
 -photo (URL)* type url
 -commentaire
 -ident : no unique
+
+
+
+510  git init
+  511  cat .git
+  512  git add .
+  513  ls .
+  514  git status
+  515  git commit -m 'premier commit'
+  516  git status
+  517  git log
+  518  git remote add origin https://github.com/perrasl/stuffs.git
+  519  git push -u origin master
+  520  history
 
 
