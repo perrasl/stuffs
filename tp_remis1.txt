@@ -1,0 +1,31 @@
+Reference dans le xml et valider avec le shemas 
+
+bibliotheque
+-  livre 
+- personnage & auteurs
+
+
+livre
+ deux attributs, ordonné.
+- langue du livre - xml:lang
+- une liste de référence aux auteurs (auteurs) (liste d'auteur liste de no)
+element
+- le titre (titre)
+- l’année de publication (annee)
+- le prix (prix) -element ou attribut : (valeur) qui contient optionnellement un attribut qui donne la monnaie dans laquelle le livre a été acheté (monnaie)
+element optionnel
+- couverture - url image
+- film - URL image 
+- commentaire
+- personnage ( arbre auteur)
+
+auteur  (element)
+-nom
+-prenom (pas contrainte d'ordre)
+option ordonnée (0 ou 1)
+-pays
+-photo (URL)* type url
+-commentaire
+-ident : no unique
+
+
