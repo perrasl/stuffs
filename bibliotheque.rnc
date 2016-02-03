@@ -1,11 +1,11 @@
-default namespace = "http://www.iro.umontreal.ca/lily&lena/bibliotheque"
+default namespace = "http://www.iro.umontreal.ca/lilyNlena/bibliotheque"
 datatypes xs = "http://www.w3.org/2001/XMLSchema-datatypes"
 
 start = bibliotheque
 
 bibliotheque = element bibliotheque {
-                  livre*,
-                  auteur*
+                    auteur*,
+                    livre*                   
                }
                
 livre = element livre {
@@ -17,7 +17,7 @@ livre = element livre {
     element couverture {xs:anyURI}?,
     element film {xs:anyURI}?,
     element commentaire {xs:string}?,
-    element personnage {auteur}
+    personnage*
 }
 
 prix = element prix {
@@ -25,13 +25,15 @@ prix = element prix {
     attribute monnaie {xs:string {pattern="[A-Z]{3}"}}?
 }
 
-auteur = element auteur {
+individu =
     attribute ident {xs:ID},
     (element nom {xs:string} & element prenom {xs:string}),
     element pays {xs:string}?,
     element photo {xs:anyURI}?,
     element commentaire {xs:string}?
-} 
 
+
+personnage = element personnage {individu}
+auteur = element auteur {individu}
 
 
