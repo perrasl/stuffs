@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="compact.css"?>
+<?xml-model href="bibliotheque.rnc" type="application/relax-ng-compact-syntax"?>
+<bibliotheque xmlns="http://www.iro.umontreal.ca/lilyNlena/bibliotheque">
+    <auteur ident="A1">
+            <nom>Rowling</nom>
+            <prenom>Joanne</prenom>
+            <pays>Angleterre</pays>
+            <photo>https://fr.wikipedia.org/wiki/J._K._Rowling#/media/File:J._K._Rowling_2010.jpg</photo>
+            <commentaire>Jolie madame</commentaire>        
+    </auteur>
+
+    <auteur ident="B1">
+            <prenom>John</prenom>
+            <nom>Tolkien</nom>
+            <photo>https://upload.wikimedia.org/wikipedia/commons/b/b4/Tolkien_1916.jpg</photo>
+    </auteur>
+    
+    <auteur ident="C1">
+        <nom>Welsh</nom>
+        <prenom>Irvine</prenom>
+        <pays>Ecosse</pays>
+        <commentaire>Est très particulier</commentaire>
+    </auteur>
+    
+    <auteur ident="D1">
+        <nom>Orwell</nom>
+        <prenom>George</prenom>
+        <pays>Inde</pays>
+        <commentaire>Qualifié d'anarchiste conservateur</commentaire>        
+    </auteur>
+    
+    <auteur ident="E1">
+        <nom>De Saint-Exupéry</nom>
+        <prenom>Antoine</prenom>
+    </auteur>
+    
+    <auteur ident="F1">
+        <nom>Sprague de Camp</nom>
+        <prenom>Lyon</prenom>
+    </auteur>
+    
+    <auteur ident="F2">
+        <nom>Drake</nom>
+        <prenom>David</prenom>
+        <commentaire>Vétéran de la guerre du Vietnam</commentaire>
+    </auteur>
+    
+    <livre xml:lang="fr-FR" auteurs="A1">
+        <titre>Harry Potter à l'école des sorciers</titre>
+        <annee>1998</annee>
+        <prix monnaie="CDN" >
+            <valeur>14.95</valeur>
+        </prix>
+        <couverture>http://www.babelio.com/couv/10230_671162.jpeg</couverture>
+        <commentaire>Ceci est le tome 1</commentaire>
+        <personnage ident="A2">
+                <nom>Potter</nom>
+                <prenom>Harry</prenom>
+                <pays>Poudlard</pays>
+                <commentaire>Porte des lunettes</commentaire>
+        </personnage>
+            
+         <personnage ident="A3">
+                <nom>Granger</nom>
+                <prenom>Hermione</prenom>
+                <photo>https://upload.wikimedia.org/wikipedia/en/d/d3/Hermione_Granger_poster</photo>
+         </personnage>
+            
+        <personnage ident="A4">
+                <nom>Weasley</nom>
+                <prenom>Ronald</prenom>
+                <pays>Angleterre</pays>
+                <commentaire>Est roux</commentaire>
+        </personnage>
+    </livre>
+    
+    <livre xml:lang="en-UK" auteurs="B1">
+        <titre>The Lord of the Rings</titre>
+        <annee>1955</annee>
+        <prix monnaie="CDN">
+            <valeur>51.45</valeur>
+        </prix>
+        <film>https://en.wikipedia.org/wiki/The_Lord_of_the_Rings_(film_series)#/media/File:Ringstrilogyposter.jpg</film>
+        <personnage ident="B2">
+            <prenom>Frodo</prenom>
+            <nom>Baggins</nom>
+            <pays>Le Comté</pays>
+            <commentaire>Est un hobbit</commentaire>
+        </personnage>
+        
+        <personnage ident="B3">
+            <nom>Gorthor le Cruel</nom>
+            <prenom>Sauron</prenom>
+            <pays>Mordor</pays>
+            <commentaire>N'est pas gentil</commentaire>
+        </personnage>
+   </livre>
+    
+   <livre xml:lang="fr-FR" auteurs="C1">
+       <titre>Trainspotting</titre>
+       <annee>1998</annee>
+       <prix monnaie="EUR">
+           <valeur>39</valeur>
+       </prix>
+       <couverture>http://media.senscritique.com/media/000000036558/source_big/Trainspotting.jpg</couverture>
+       <film>http://media.senscritique.com/media/000004889078/source_big/Trainspotting.jpg</film>
+       
+       <personnage ident="C2">
+           <nom>Renton</nom>
+           <prenom>Mark</prenom>
+        </personnage>
+   </livre>
+    
+   <livre xml:lang="fr-FR" auteurs="D1">
+       <titre>La ferme des animaux</titre>
+       <annee>1945</annee>
+       <prix>
+           <valeur>9.95</valeur>
+       </prix>
+       <couverture>http://image4.archambault.ca/F/8/6/7/JLI16279475.1433317003.320x320.jpg</couverture>
+   </livre>
+    
+   <livre xml:lang="fr-FR   " auteurs="E1">
+       <titre>Le petit prince</titre>
+       <annee>1943</annee>
+       <prix monnaie="CDN">
+           <valeur>11.99</valeur>
+       </prix>
+      <commentaire>Dessine-moi un mouton</commentaire>
+   </livre>
+   
+   <livre xml:lang="en-US" auteurs="F1 F2">
+       <titre>The Undesired Princess and the Enchanted Bunny</titre>
+       <annee>1990</annee>
+       <prix monnaie="CDN">
+           <valeur>36.12</valeur>
+       </prix>
+       <couverture>http://d.gr-assets.com/books/1191548889l/1996614.jpg</couverture>
+   </livre>
+    
+</bibliotheque>
