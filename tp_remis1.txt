@@ -17,9 +17,9 @@ element optionnel
 - couverture - url image
 - film - URL image 
 - commentaire
-- personnage ( arbre auteur)
+- personnage ( arbre auteur)*
 
-auteur  (element)
+auteur  (element) / Personnage 
 -nom
 -prenom (pas contrainte d'ordre)
 option ordonnée (0 ou 1)
@@ -42,4 +42,6 @@ option ordonnée (0 ou 1)
   519  git push -u origin master
   520  history
 
+git merge tool ...
 
+lieu de travail : /Users/Lilyanne/GitHub/stuffs
