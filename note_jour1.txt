@@ -21,3 +21,22 @@ nous n'avons indiquer que
 Cependant il y a une question que je me pose :
 je ne pense pas que les personage doivent avoir l'attribut ID 
 On pourrait demander au demo.
+
+
+Harry Potter à l'école des sorciers 
+Français
+J. K. Rowling
+14,95 CAN
+image livre : http://vignette2.wikia.nocookie.net/harrypotter/images/5/56/Couverture_HP1_fr.jpg/revision/latest?cb=20090923063526&path-prefix=fr
+image film : http://www.babelio.com/users/QUIZ_Harry-potter--lecole-des-sorciers_7525.jpeg
+1998
+commentaire de livre : ‘Premier de la série’ 
+
+
+harry potter ‘porte de lunette’
+hermione granger ‘a les cheveux frisé’ image : https://upload.wikimedia.org/wikipedia/en/d/d3/Hermione_Granger_poster.jpg
+ronald weasley ‘Est un roux’ ville :  Poudlard
+
+nom : Joanne Rowling
+image auteur : https://fr.wikipedia.org/wiki/J._K._Rowling#/media/File:J._K._Rowling_2010.jpg
+pays : Angleterre
