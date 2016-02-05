@@ -3,11 +3,11 @@
 <!ENTITY space "<xsl:text> </xsl:text>">
 ]>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns="http://www.iro.umontreal.ca/lilyNlena/bibliotheque" version="2.0">
-    
-    <xsl:param name="auteur" select="."/>
-    
-    <xsl:strip-space elements="*"/>
+    xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+    xmlns:ns1="http://www.iro.umontreal.ca/lilyNlena/bibliotheque" 
+    exclude-result-prefixes="xd"
+    version="2.0">
+
     <!-- to produce legal and validable XHTML ... -->
     <xsl:output method="xhtml" 
         doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -15,6 +15,9 @@
         indent="yes"
         encoding="UTF-8"/>
     
+    <xsl:param name="auteur" select="."/>
+    <!-- <xsl:param name="auteur" select="A1"/> -->
+
     <xsl:template match="/">
         <html>
             <head>
@@ -26,30 +29,48 @@
         </html>
     </xsl:template>
     
-    <xsl:template match="bibliotheque">
+    <xsl:template match="ns1:bibliotheque">
         <h1>
             Bibliothèque, liste des auteurs
             <!-- ceci serait uniquement pour tous les auteurs -->
         </h1>
         <table border="1">
             <tr>
-                <xsl:for-each select="'ident', 'pays', 'photo', 'commentaire'">
+                <xsl:for-each select="'Ident', 'Nom', 'Prénom', 'Pays', 'Photo', 'Commentaire'">
                     <th><xsl:value-of select="."/></th>
                 </xsl:for-each>
             </tr>
-            <xsl:apply-templates select="auteur"/>    
+            <xsl:apply-templates/>    
         </table>
     </xsl:template>
     
-    <xsl:template match="auteur">
+    <xsl:template match="ns1:auteur">
         <tr>
             <td><xsl:value-of select="@ident"/></td>
-            <td><xsl:value-of select="@ipays"/></td>
-            <td><xsl:value-of select="@photo"/></td>
+            <td><xsl:value-of select="ns1:nom"/></td>
+            <td><xsl:value-of select="ns1:prenom"/></td>
+            <td><xsl:value-of select="ns1:pays"/></td>
+            <td>
+                <xsl:call-template name="templatePhoto">
+                </xsl:call-template>
             <!-- Ceci ne permet pas de visualiser l'image
-            comment insérer img src puisqu'on fait référence...-->
-            <td><xsl:value-of select="@commentaire"/></td>
+                créer un template pour img
+                comment insérer img src puisqu'on fait référence...-->
+            </td>
+            <td><xsl:value-of select="ns1:commentaire"/></td>
         </tr>
+    </xsl:template>
+    
+    <xsl:template name="templatePhoto">
+       <img>
+           <xsl:attribute name="src">
+               <xsl:value-of select="ns1:photo"/>
+           </xsl:attribute>
+       </img>           
+    </xsl:template>
+    
+    <xsl:template match="ns1:livre">
+        
     </xsl:template>
 </xsl:stylesheet>
     
